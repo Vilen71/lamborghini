@@ -134,7 +134,7 @@ ul {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 129px;
   z-index: 5;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -361,6 +361,10 @@ ul {
   .header::before {
     opacity: 0.6;
     background-position: -6.25rem 0;
+  }
+  
+  .top-header {
+    height: 100px;
   }
 
   .top-header::after {
