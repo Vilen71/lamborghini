@@ -1,0 +1,949 @@
+@import "nullestyle.scss";
+
+.final {
+   padding: rem(100) 0;
+   // .final__container
+   &__container {
+   }
+   // .final__title
+   &__title {
+      margin-bottom: em(34, 32);
+   }
+   // .final__body
+   &__body {
+   }
+   // .final__text
+   &__text {
+      display: flex;
+      justify-content: space-between;
+      column-gap: rem(20);
+      margin-bottom: em(30, 14);
+   }
+   // .final__img
+   &__img img {
+      width: 100%;
+   }
+}
+
+.text-final {
+   // .text-final__left
+   &__left {
+      line-height: lh(16.8, 14);
+      flex: 1 1 48.15%;
+   }
+   // .text-final__right
+   &__right {
+      font-weight: 700;
+      flex: 1 1 48.15%;
+   }
+}
+
+//todo ======================= - final / teams - =======================//
+
+.teams {
+   padding-bottom: em(66);
+   // .teams__container
+   &__container {
+      row-gap: rem(20);
+      display: flex;
+      justify-content: space-between;
+      column-gap: rem(20);
+   }
+   // .teams__body
+   &__body {
+   }
+   // .teams__title
+   &__title {
+      margin-bottom: em(30, 32);
+   }
+   // .teams__text
+   &__text {
+      line-height: lh(16.8, 14);
+      margin-bottom: em(30, 14);
+      max-width: rem(352);
+   }
+   // .teams__desc
+   &__desc {
+      line-height: lh(16.8, 14);
+      max-width: rem(352);
+   }
+   // .teams__img
+   &__img img {
+      max-width: 100%;
+   }
+}
+
+//todo ======================= - teams / calendary - =======================//
+
+.calendary {
+   padding-bottom: rem(100);
+   // .calendary__container
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(20);
+      flex-wrap: wrap;
+      // max-width: rem(1000);
+   }
+   // .calendary__body
+   &__body {
+   }
+   // .calendary__title
+   &__title {
+      max-width: rem(415);
+      text-transform: uppercase;
+      margin-bottom: em(30);
+   }
+   // .calendary__text
+   &__text {
+      line-height: lh(16.8, 14);
+      max-width: rem(377);
+   }
+   // .calendary__data-list
+   &__data-list {
+   }
+}
+
+.data-list {
+   padding: rem(20) 0;
+   border-top: 1px solid $mainColor;
+   border-bottom: 1px solid $mainColor;
+   position: relative;
+
+   &::before {
+      content: "";
+      width: 124.1%;
+      height: 34px;
+      position: absolute;
+      top: 54px;
+      left: -12%;
+      background-color: #d9d9d9;
+      opacity: 0.5;
+   }
+
+   // .data-list__row
+   &__row {
+      display: flex;
+      gap: rem(20);
+   }
+   // .data-list__column
+   &__column {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(20);
+   }
+   // .data-list__step
+   &__step {
+   }
+   // .data-list__country
+   &__country {
+   }
+   // .data-list__data
+   &__data {
+   }
+   // .data-list__column-1
+   &__column-1 {
+      max-width: rem(112);
+   }
+   // .data-list__column-2
+   &__column-2 {
+      max-width: rem(161);
+   }
+   // .data-list__column-3
+   &__column-3 {
+      max-width: rem(136);
+   }
+}
+
+//todo ======================= - calendary / track - =======================//
+
+.track {
+   position: relative;
+   padding: rem(47) 0 rem(89);
+
+   &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: url("../img/grand_final\ 1.png") no-repeat center / cover;
+      z-index: -1;
+   }
+   // .track__container
+   &__container {
+      display: flex;
+      flex-direction: column;
+   }
+   // .track__title
+   &__title {
+      margin-bottom: em(30, 32);
+   }
+   // .track__text
+   &__text {
+      max-width: rem(434);
+      line-height: lh(16.8, 14);
+      margin-bottom: em(250.5, 14);
+   }
+   // .track__img
+   &__img {
+      margin-left: auto;
+
+      & img {
+         max-width: 100%;
+      }
+   }
+}
+
+//todo ======================= - track / evo - =======================//
+
+.evo {
+   padding: rem(100) 0 rem(50);
+   background-color: #363636;
+   color: #fff;
+   // .evo__container
+   &__container {
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: rem(351);
+         left: rem(-139);
+         width: 203px;
+         height: 223px;
+         background: url("../img/Polygon-1.png") no-repeat;
+      }
+   }
+   // .evo__body
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      column-gap: rem(25);
+   }
+   // .evo__title
+   &__title {
+   }
+   // .evo__text
+   &__text {
+      max-width: rem(437);
+      line-height: lh(16.8, 14);
+      margin-bottom: em(198, 14);
+      position: relative;
+      z-index: 2;
+   }
+   // .evo__img
+   &__img {
+      text-align: center;
+      margin-bottom: rem(58);
+      position: relative;
+      max-width: 100%;
+
+      & img {
+         max-width: 100%;
+         position: relative;
+         z-index: 2;
+      }
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: rem(-230);
+         left: rem(-37);
+         width: rem(556);
+         height: rem(565);
+         background: url("../img/Polygon-2.png") no-repeat;
+      }
+   }
+   // .evo__parameters
+   &__parameters {
+      display: flex;
+      justify-content: space-between;
+      column-gap: rem(15);
+      row-gap: rem(20);
+      position: relative;
+      z-index: 2;
+   }
+}
+.text-evo {
+   // .text-evo__top
+   &__top {
+      margin-bottom: em(30, 14);
+   }
+   // .text-evo__bottom
+   &__bottom {
+   }
+}
+.parameters-evo {
+   // .parameters-evo__card
+   &__card {
+      line-height: lh(16.8, 14);
+      white-space: nowrap;
+   }
+}
+
+//todo ======================= - evo / evo-con - =======================//
+
+.evo-con {
+   padding: rem(126) 0 rem(100);
+   // .evo-con__container
+   &__container {
+   }
+   // .evo-con__body
+   &__body {
+      display: flex;
+      justify-content: space-between;
+   }
+   // .evo-con__text
+   &__text {
+      margin-bottom: em(100, 14);
+   }
+   // .evo-con__text-link
+   &__text-link {
+      line-height: lh(16.8, 14);
+      &:not(:last-child) {
+         margin-bottom: em(30, 14);
+      }
+      &:nth-child(1) {
+         max-width: em(285, 14);
+      }
+      &:nth-child(2) {
+         max-width: em(437, 14);
+      }
+      &:nth-child(3) {
+         max-width: em(590, 14);
+      }
+   }
+   // .evo-con__imgs
+   &__imgs {
+      position: relative;
+      text-align: center;
+   }
+   // .evo-con__img-top
+   &__img-top {
+      position: relative;
+      top: -68px;
+      left: -280px;
+
+      &::before {
+         content: "";
+         background: url("../img/Polygon-3.png");
+         width: 228px;
+         height: 257px;
+         position: absolute;
+         top: -80px;
+         left: -7px;
+      }
+   }
+   // .evo-con__img-bottom
+   &__img-bottom {
+      position: relative;
+      top: -22px;
+      right: 11px;
+
+      &::before {
+         content: "";
+         background: url("../img/Polygon-4.png");
+         width: 296px;
+         height: 311px;
+         position: absolute;
+         top: -85px;
+         left: -21px;
+      }
+   }
+   // .evo-con__video
+   &__video {
+      position: relative;
+   }
+   // .evo-con__imgs
+   &__img {
+      text-align: center;
+      & img {max-width: 100%;}
+   }
+}
+
+//todo ======================= - evo-con / blog - =======================//
+
+.blog {
+   padding-bottom: em(100,14);
+   // .blog__container
+   &__container {
+   }
+   // .blog__title
+   &__title {
+      margin-bottom: em(80,32);
+   }
+   // .blog__slider
+   &__slider {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: relative;
+   }
+}
+.slide-swiper {
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+   // .slide-swiper__img
+   &__img {
+      margin-bottom: rem(20);
+      & img {max-width: 100%;}
+   }
+   // .slide-swiper__title
+   &__title {
+      font-size: rem(20);
+      font-weight: 400;
+      line-height: lh(23.44,20);
+      width: 100%;
+      margin-bottom: 0.5em;
+   }
+   // .slide-swiper__text
+   &__text {
+      max-width: rem(430);
+      line-height: lh(16.8,14);
+      margin-bottom: em(10,14);
+      flex-grow: 1;
+   }
+   // .slide-swiper__button
+   &__button {
+      align-self: start;
+      margin-top: auto;
+      background-color: transparent;
+      font-size: rem(12);
+      line-height: lh(14.4,12);
+      color: #363636;
+   }
+}
+.swiper-button-prev,.swiper-button-next {
+   top: rem(-35) !important;
+   background: transparent;
+   z-index: 1 !important;
+   &::after {
+      content: '' !important;
+   }
+   @media (max-width: em(750)) {
+      top: rem(280) !important;
+      transform: scale(1.2);
+   }
+   @media (max-width: em(460)) {
+      top: rem(270) !important;
+   }
+   @media (max-width: em(420)) {
+      top: rem(250) !important;
+   }
+   @media (max-width: em(385)) {
+      top: rem(230) !important;
+   }
+   @media (max-width: em(357)) {
+      top: rem(210) !important;
+   }
+}
+.swiper-button-prev {
+   left: 44.5% !important;
+}
+.swiper-button-next {
+   left: 52.5% !important;
+}
+@media (max-width: em(750)) {
+   .swiper-button-prev {
+      left: 0 !important;
+   }
+   .swiper-button-next {
+      right: 0 !important;
+      left: unset !important;
+   }
+   .swiper-slide {
+      align-items: center;
+   }
+   .slide-swiper__img {
+      margin-bottom: rem(85);
+   }
+   .slide-swiper__text {
+      max-width: unset;
+   }
+   .blog {
+      padding-bottom: rem(80);
+      &__title {
+         margin-bottom: em(50,32);
+      }
+   }
+}
+
+//todo ======================= - blog / news - =======================//
+
+.news {
+   // .news__container
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(40) rem(20);
+   }
+   // .news__body
+   &__body {
+      max-width: rem(434);
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(30);
+   }
+   // .news__img
+   &__img img{
+      max-width: 100%;
+   }
+}
+.body-news {
+   // .body-news__row
+   &__row {
+   }
+   // .body-news__title
+   &__title {
+      font-size: rem(12);
+      line-height: lh(14.4,12);
+      color: #9F6B08;
+      margin-bottom: em(3,12);
+   }
+   // .body-news__name
+   &__name {
+      font-weight: 700;
+      line-height: lh(16.6,14);
+      margin-bottom: em(10,14);
+   }
+   // .body-news__text
+   &__text {
+      font-style: italic;
+      line-height: lh(16.6,14);
+   }
+}
+
+//todo ======================= - news / footer - =======================//
+
+.footer {
+   background-color: #363636;
+   color: #fff;
+   font-weight: 300;
+   padding: rem(100) 0;
+   // .footer__container
+   &__container {
+   }
+   // .footer__title
+   &__title {
+      margin-bottom: em(50,32);
+   }
+   // .footer__row
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: em(90,14);
+   }
+   // .footer__body
+   &__body {
+      display: flex;
+      flex-direction: column;
+      row-gap: rem(50);
+   }
+   // .footer__all
+   &__all {
+   }
+   // .footer__subtitle
+   &__subtitle {
+      font-size: rem(16);
+      line-height: lh(19.2,16);
+      font-weight: 700;
+      margin-bottom: em(20,16);
+   }
+   // .footer__number
+   &__number {
+      font-size: rem(15.53);
+      margin-bottom: em(10,15.53);
+   }
+   // .footer__email
+   &__email {
+      font-size: rem(15.53);
+      color: #fff;
+   }
+   // .footer__tickets
+   &__tickets {
+   }
+   // .footer__social
+   &__social {
+      width: rem(143);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // .footer__social_img
+      &_img {
+         & img {display: block;}
+      }
+   }
+   // .footer__card
+   &__card {
+   }
+   // .footer__card-link
+   &__card_link {
+      width: 454px;
+      height: rem(253);
+      max-width: 100%;
+      background-color: #777;
+      & iframe {max-width: 100%;}
+   }
+   // .footer__text
+   &__text {
+      font-size: rem(15.53);
+      margin-bottom: em(20,15.53);
+   }
+   // .footer__subrow
+   &__subrow {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .footer__design
+   &__design {
+   }
+   // .footer__logo
+   &__logo img{
+      width: 50px;
+      height: 58px;
+      display: block;
+   }
+   // .footer__politic
+   &__politic {
+      color: #fff;
+   }
+}
+
+//todo ======================= - footer / media - =======================//
+
+@media (max-width: em(915)) {
+   .data-list {
+      margin: 0 auto;
+
+      &::before {
+         width: 125%;
+         left: -12.5%;
+      }
+
+      &__row {
+         @include AdaptiveValue("column-gap", 87, 14, 915, 500);
+      }
+   }
+   .calendary {
+      &__title {
+         max-width: none;
+         margin-bottom: em(20, 32);
+      }
+      &__text {
+         max-width: none;
+      }
+   }
+   .evo-con {
+      &__img-top {
+         transform: scale(0.75);
+         left: -220px;
+      }
+      &__img-bottom {transform: scale(0.75);}
+   }
+}
+@media (max-width: $mobile) {
+   .teams {
+      padding: rem(50) 0 0;
+      &__container {
+         flex-wrap: wrap;
+         row-gap: rem(25);
+      }
+      &__text {
+         max-width: none;
+         margin-bottom: em(15, 14);
+      }
+      &__desc {
+         max-width: none;
+      }
+      &__img {
+         margin: 0 auto;
+      }
+   }
+   .final {
+      padding: rem(50) 0 0;
+      &__title {
+         margin-bottom: em(22, 32);
+      }
+   }
+   .text-final {
+      flex-direction: column;
+      row-gap: rem(10);
+      margin-bottom: rem(45);
+   }
+   .track {
+      &__text {
+         margin-bottom: em(100, 14);
+      }
+   }
+   .evo {
+      &__body {
+         flex-wrap: wrap;
+      }
+      &__text {
+         max-width: none;
+         margin-bottom: em(160, 14);
+      }
+      &__title {
+         margin-bottom: em(30, 32);
+      }
+      &__parameters {
+         flex-wrap: wrap;
+      }
+      &__img {
+         &::before {
+            transform: scale(0.65);
+            bottom: rem(-205);
+         }
+      }
+   }
+   .parameters-evo {
+      &__card-2 {
+         order: 5;
+      }
+      &__card-3 {
+         order: 2;
+      }
+      &__card-4 {
+         order: 4;
+         flex: 1 0 50%;
+      }
+      &__card-5 {
+         order: 2;
+      }
+   }
+   .text-evo {
+      &__top {
+         margin-bottom: em(20, 14);
+      }
+   }
+   .evo-con {
+      padding-top: 80px;
+      &__body {
+         flex-direction: column;
+         row-gap: rem(20);
+      }
+      &__text {
+         margin-bottom: em(80,14);
+      }
+      &__text-link {
+         &:nth-child(1) {
+            max-width: none;
+         }
+         &:nth-child(2) {
+            max-width: none;
+         }
+         &:nth-child(3) {
+            max-width: none;
+         }
+      }
+      &__imgs {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         @include AdaptiveValue('column-gap',140,10,767.98,440);
+         margin-bottom: em(65,14);
+         transform: scale(0.9);
+         margin-left: em(-5,14);
+      }
+      &__img-top {
+         top: 0;
+         left: 0;
+         transform: scale(1);
+      }
+      &__img-bottom{
+         top: -5px;
+         left: 0;
+         transform: scale(1);
+
+         &::before {
+            top: -48px;
+            left: -16px;
+            background: url("../img/Polygon-3.png") no-repeat;
+         }
+      }
+   }
+   .news {
+      padding-bottom: rem(50);
+      &__container {
+         flex-direction: column;
+      }
+      &__body {
+         max-width: unset;
+      }
+      &__img {
+         text-align: center;
+      }
+   }
+   .footer {
+      padding: rem(80) 0 rem(50);
+      &__container {
+         text-align: center;
+      }
+      &__row {
+         flex-direction: column;
+         margin-bottom: rem(70);
+      }
+      &__body {
+         margin-bottom: rem(50);
+      }
+      &__card {
+         &_link {
+            margin: 0 auto;
+         }
+      }
+      &__social {
+         margin: 0 auto;
+      }
+      &__subrow {
+         flex-direction: column;
+         row-gap: rem(20);
+      }
+      &__logo {order: 3;}
+   }
+}
+@media (max-width: em(465)) {
+   .data-list {
+      &__row {
+         column-gap: rem(40);
+      }
+
+      &__column {
+         font-size: 12px;
+         row-gap: rem(25);
+      }
+
+      &__country {
+         white-space: nowrap;
+      }
+
+      &__data {
+         // white-space: nowrap;
+         &:nth-child(4) {
+            white-space: nowrap;
+         }
+         &:nth-child(5) {
+            margin-top: -6px;
+            max-width: 109px;
+         }
+         &:nth-child(6) {
+            margin-top: -12px;
+         }
+      }
+   }
+   .track {
+      &__text {
+         margin-bottom: em(70, 14);
+      }
+   }
+   .evo {
+      padding: rem(50) 0;
+      &__text {
+         margin-bottom: em(90, 14);
+      }
+      &__parameters {
+         flex-direction: column;
+         align-items: center;
+      }
+      &__img {
+         &::before {
+            background: url("../img/Polygon-1.png") no-repeat;
+            bottom: rem(-645);
+            left: rem(230);
+            transform: scale(1);
+         }
+      }
+   }
+   .evo-con {
+      padding: rem(50) 0 0;
+      &__imgs {
+         align-items: center;
+         justify-content: center;
+         row-gap: 100px;
+         margin-bottom: 100px;
+         transform: scale(0.75);
+      }
+      &__img-bottom {
+      }
+   }
+   .parameters-evo {
+      &__card {
+         text-align: center;
+      }
+      &__card-1 {
+         order: 2;
+      }
+      &__card-2 {
+         order: 4;
+      }
+      &__card-3 {
+         order: 5;
+      }
+      &__card-4 {
+         order: 3;
+      }
+      &__card-5 {
+         order: 1;
+      }
+   }
+   .calendary {
+      padding: rem(50) 0;
+   }
+   .blog {
+      padding: rem(50) 0;
+   }
+   .footer {
+      padding: rem(45) 0;
+      &__row {
+         margin-bottom: rem(35);
+      }
+   }
+}
+@media (max-width: em(390)) {
+   .data-list {
+      &__row {
+         column-gap: rem(24);
+      }
+      &__step {
+         &:nth-child(7) {
+            margin-top: -12px;
+            max-width: 60px;
+         }
+      }
+   }
+   .evo-con {
+      &__imgs {
+         margin-bottom: em(25,14);
+         transform: scale(0.63);
+      }
+      &__text {margin-bottom: em(25,14);}
+   }
+   .slide-swiper__img {
+      margin-bottom: rem(70);
+   }
+}
+
+
+// .svetofor {
+//    padding: rem(100) 0;
+//    background-color: rgb(188, 230, 216);
+//    // .svetofor__container
+//    &__container {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//    }
+//    // .svetofor__title
+//    &__title {
+//       margin-bottom: em(80,32);
+//    }
+//    // .svetofor__block
+//    &__block {
+//       width: 200px;
+//       height: 200px;
+//       border-radius: 50%;
+//       border: 1px solid #000;
+//    }
+// }
