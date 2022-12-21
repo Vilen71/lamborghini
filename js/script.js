@@ -77,13 +77,7 @@ if (menuItems.length > 0) {
       if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
          const gotoBlock = document.querySelector(menuLink.dataset.goto);
          const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - topHeader.offsetHeight;
-         // console.log(gotoBlock.getBoundingClientRect().top + " Расстояние вершины блока от вершины поля видимости");
-         // console.log(pageYOffset + " Количество прокрученных пикселей");
-         // console.log(headerTop.offsetHeight + " Высота шапки");
-         // console.log("----------");
-         // console.log(`${gotoBlock.getBoundingClientRect().top} + ${pageXOffset} - ${menu.offsetHeight}`);
-         // console.log("Итог: " + gotoBlockValue);
-         // console.log(" ");
+         
          if (burger.classList.contains("active")) {
             menuClose();
          }
@@ -96,56 +90,6 @@ if (menuItems.length > 0) {
       }
    }
 }
-
-// function abc() {
-//    if (this.style.backgroundColor) {
-//       this.style.backgroundColor = null;
-//       console.log('none');
-//    }
-//    else {
-//       this.style.backgroundColor = 'red';
-//       console.log('red');
-//    }
-// }
-
-// const sliders = document.querySelectorAll(".slide-swiper")
-// sliders.forEach(function (elem) {
-//    elem.addEventListener("click", abc)
-// })
-
-
-// document.body.addEventListener("click", function () {
-//    window.scrollTo(100, 500)
-// })
-// const inputs = document.querySelectorAll(".les__input");
-// const subresult = document.querySelectorAll(".les__subresult span");
-// const cube = document.querySelector(".middle-les__cube");
-// const result = document.querySelector(".result__text-link");
-// const btn = document.getElementById("btn");
-// let resultStyle
-
-// const value = function () {
-//    subresult[0].innerHTML = inputs[0].value;
-//    subresult[1].innerHTML = inputs[1].value;
-//    subresult[2].innerHTML = inputs[2].value;
-//    subresult[3].innerHTML = inputs[3].value;
-
-//    resultStyle = cube.style.borderRadius = `${subresult[0].innerHTML}px ${subresult[1].innerHTML}px ${subresult[3].innerHTML}px ${subresult[2].innerHTML}px`;
-//    if (result.innerHTML) {
-//       result.innerHTML = "border-radius: " + resultStyle;
-//    }
-// };
-
-// for (i of inputs) {
-//    i.addEventListener("input", value);
-// };
-
-// btn.addEventListener("click", function () {
-//    result.innerHTML = "border-radius: " + resultStyle;
-//    if (resultStyle == undefined) {
-//       result.innerHTML = 'Создайте пожалуйста ваш трансформер :)'
-//    }
-//})
 
 //================================================
 function useDynamicAdapt(type = 'max') {
@@ -312,24 +256,3 @@ function useDynamicAdapt(type = 'max') {
    }
 }
 useDynamicAdapt()
-
-
-// const circle = document.getElementById("circle");
-
-// const colorDict = {
-//    red: "red",
-//    yellow: "yellow",
-//    green: "green",
-// }
-
-// const colorSwitch = {
-//    red: [colorDict.yellow],
-//    yellow: [colorDict.green],
-//    green: [colorDict.red],
-// }
-
-// const currentColor = circle.style.backgroundColor = [colorDict.red];
-
-// circle.addEventListener("click", function () {
-//    circle.style.backgroundColor = "red";
-// })
