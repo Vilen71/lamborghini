@@ -32,7 +32,7 @@
    top: 0;
    left: 0;
    width: 100%;
-   height: 100px;
+   height: 129px;
    z-index: 5;
    transition: all 0.5s ease 0s;
 
@@ -198,6 +198,7 @@
       }
    }
    .top-header {
+	 height: 100px;
       
       &::after {
          content: "";
@@ -310,114 +311,3 @@
       }
    }
 }
-
-
-// .les {
-//    max-width: 1000px;
-//    padding: 250px 0 ;
-//    display: flex;
-//    flex-direction: column;
-//    margin: 0 auto;
-//    justify-content: space-between;
-
-//    // .les__result
-//    &__result {
-//       margin: 0 auto;
-//    }
-// }
-
-// .top-les {
-//    display: flex;
-//    align-items: center;
-//    justify-content: space-between;
-// 		// .top-les__tl
-// 		&__tl {
-// 		}
-// 		// .top-les__tr
-// 		&__tr {
-// 		}
-// }
-// .tl {
-// 		// .tl__input
-// 		&__input {
-// 		}
-// 		// .tl__result
-// 		&__result {
-// 		}
-// }
-// .tr {
-// 		// .tr__input
-// 		&__input {
-// 		}
-// 		// .tr__result
-// 		&__result {
-// 		}
-// }
-
-// .middle-les {
-// 		// .middle-les__cube
-// 		&__cube {
-//          width: 200px;
-//          height: 200px;
-//          background-color: skyblue;
-//          margin: 0 auto;
-// 		}
-// }
-
-// .bottom-les {
-//    display: flex;
-//    align-items: center;
-//    justify-content: space-between;
-// 		// .bottom-les__bl
-// 		&__bl {
-// 		}
-// 		// .bottom-les__br
-// 		&__br {
-// 		}
-// }
-// .bl {
-// 		// .bl__input
-// 		&__input {
-// 		}
-// 		// .bl__result
-// 		&__result {
-// 		}
-// }
-// .br {
-// 		// .br__input
-// 		&__input {
-// 		}
-// 		// .br__result
-// 		&__result {
-// 		}
-// }
-
-// .result {
-//       display: flex;
-//       margin-top: 95px;
-//       align-items: center;
-//    // .result__btn
-//    &__btn {
-//       background-color: rgb(227, 58, 58);
-//       border-radius: 10px;
-//       padding: 20px;
-//       cursor: pointer;
-//       margin-right: 10px;
-//       font-size: 18px;
-//       position: relative;
-
-//       &:hover {
-//       background-color: rgb(195, 45, 45);
-//       }
-//       &:active {
-//          top: 1px;
-//       }
-//    }
-//    // .result__text
-//    &__text {
-//    }
-//    // .result__text-link
-//    &__text-link {
-//       font-size: 24px;
-//    }
-// }
